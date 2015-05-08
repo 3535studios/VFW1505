@@ -8,7 +8,6 @@ var mainWindow = Ti.UI.createWindow({
 	backgroundRepeat: true
 });
 
-//create a view
 var myFirstView = Ti.UI.createView({
 	backgroundColor: "#333",
 	borderRadius: 5,
@@ -16,8 +15,6 @@ var myFirstView = Ti.UI.createView({
 	width: 100,
 	height: 100
 });
-
-//position my second view
 
 var mySecondView = Ti.UI.createView({
 	backgroundColor: "red",
