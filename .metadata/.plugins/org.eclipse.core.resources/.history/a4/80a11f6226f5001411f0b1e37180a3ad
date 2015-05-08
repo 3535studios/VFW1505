@@ -16,12 +16,5 @@ var myFirstView = Ti.UI.createView({
 	height: 100
 });
 
-var mySecondView = Ti.UI.createView({
-	backgroundColor: "red",
-	width: "50%",
-	height: "50%",
-	top: 40
-});
-
-mainWindow.add(myFirstView, mySecondView);
+mainWindow.add(myFirstView);
 mainWindow.open();
