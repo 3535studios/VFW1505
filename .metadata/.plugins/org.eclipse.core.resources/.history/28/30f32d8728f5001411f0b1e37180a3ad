@@ -18,6 +18,7 @@ var myFirstView = Ti.UI.createView({
 });
 
 //position my second view
+
 var mySecondView = Ti.UI.createView({
 	backgroundColor: "red",
 	width: "50%",
@@ -25,15 +26,5 @@ var mySecondView = Ti.UI.createView({
 	top: 40
 });
 
-// Add a label
-var myText = Ti.UI.createLabel({
-	text: "Hello World!",
-	color: "#fff",
-	font: {fontSize: 14, fontFamily: "Helvetica", fontWeight: "bold", fontStyle: "italic"},
-	top: 10, 
-	left: 10
-});
-
 mainWindow.add(myFirstView, mySecondView);
-mySecondView.add(myText);
 mainWindow.open();

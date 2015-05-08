@@ -35,5 +35,5 @@ var myText = Ti.UI.createLabel({
 });
 
 mainWindow.add(myFirstView, mySecondView);
-mySecondView.add(myText);
+myFirstView.add(myText);
 mainWindow.open();
