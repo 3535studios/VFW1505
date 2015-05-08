@@ -17,7 +17,7 @@ var textView = Ti.UI.createView({
 });
 
 // Add a label
-var textLabel = Ti.UI.createLabel({
+var text = Ti.UI.createLabel({
 	text: "Click button below to start",
 	font: {fontSize: 20, fontFamily: "Arial"},
 	textAlign: "center",
@@ -43,14 +43,7 @@ var buttonText = Ti.UI.createLabel({
 	text: "Change Text"
 });
 
-//create function
-var changeText = function(){
-	textLabel.text = "New Text";
-};
-//add event listener
-buttonView.addEventListener("click", changeText);
-
 mainWindow.add(textView, buttonView);
-textView.add(textLabel);
+textView.add(text);
 buttonView.add(buttonText);
 mainWindow.open();
