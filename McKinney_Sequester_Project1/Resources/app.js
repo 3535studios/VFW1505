@@ -7,6 +7,9 @@ var mainWindow = Ti.UI.createWindow({
 	backgroundColor: "#333"
 });
 
+//create an array
+var fruitOfSpirit = ["Love","Joy","Peace", "Patience", "Kindness", "Goodness", "Gentleness", "Faithfulness", "Self-Control"];
+
 //create a view
 var textView = Ti.UI.createView({
 	backgroundColor: "#fff",
@@ -19,7 +22,7 @@ var textView = Ti.UI.createView({
 
 // Add a label
 var textLabel = Ti.UI.createLabel({
-	text: "Click button below to start",
+	text: fruitOfSpirit[0],
 	font: {fontSize: 20, fontFamily: "Arial"},
 	textAlign: "center",
 	top: 25, 
@@ -64,21 +67,22 @@ var buttonText2 = Ti.UI.createLabel({
 	text: "Next"
 });
 
-//create function
-var previous = function(){
-	textView.hide();
+//create previousButton function
+var previousButton = function(){
+		
+	
 };
 
-//create function 
-var next = function(){
-	textView.hide();
+//create nextButton function 
+var nextButton = function() {
+	textLabel.text = fruitOfSpirit;
 };
 
 //add event listener
-buttonView.addEventListener("click", previous);
+buttonView.addEventListener("click", previousButton);
 
 //add event listener
-buttonView2.addEventListener("click", next);
+buttonView2.addEventListener("click", nextButton);
 
 mainWindow.add(textView, buttonView);
 mainWindow.add(textView, buttonView2);
@@ -88,6 +92,6 @@ buttonView2.add(buttonText2);
 mainWindow.open();
 
 //load require file
-var loadFile = require("fruit");
+//var loadFile = require("fruitOfSpirit");
 
 
