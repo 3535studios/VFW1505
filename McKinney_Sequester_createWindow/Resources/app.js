@@ -44,11 +44,11 @@ var buttonText = Ti.UI.createLabel({
 });
 
 //create function
-var changeText = function(){
-	textLabel.text = "New Text";
+var displayItems = function(){
+	textView.hide();
 };
 //add event listener
-buttonView.addEventListener("click", changeText);
+buttonView.addEventListener("click", displayItems);
 
 mainWindow.add(textView, buttonView);
 textView.add(textLabel);
