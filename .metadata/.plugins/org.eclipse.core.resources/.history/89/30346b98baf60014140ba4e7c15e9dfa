@@ -14,7 +14,7 @@ var j = 1;
 //create a view
 var textView = Ti.UI.createView({
 	backgroundColor: "#fff",
-	top: 30,
+	top: 20,
 	left: 20,
 	right: 20,
 	height: 450,
@@ -68,6 +68,46 @@ var buttonText2 = Ti.UI.createLabel({
 	text: "Next"
 });
 
+//create previousButton function
+var previousButton = function(){
+	
+	if (i < fruitOfSpirit.length) {
+		i --;
+		j--;
+		textLabel.text = j + ". "+ fruitOfSpirit[i];
+		
+	} else if (i === fruitOfSpirit.length) {
+		i = 9;
+		j = 1;
+		textLabel.text = j + ". " + fruitOfSpirit[i];
+	} else {
+		i = 9;
+		j = 9;
+		textLabel.text = j + ". " + fruitOfSpirit[i];
+	}
+};
+
+//create nextButton function 
+var nextButton = function() {
+	//textLabel.text = fruitOfSpirit;
+	if (i < fruitOfSpirit.length - 1) {
+		i++;
+		j++;
+		textLabel.text = j + ". "+ fruitOfSpirit[i];
+		
+	} else if (i === fruitOfSpirit.length -1) {
+		i = 0;
+		j = 1;
+		textLabel.text = j + ". " + fruitOfSpirit[i];
+	}
+};
+
+//add event listener
+buttonView.addEventListener("click", previousButton);
+
+//add event listener
+buttonView2.addEventListener("click", nextButton);
+
 mainWindow.add(textView, buttonView);
 mainWindow.add(textView, buttonView2);
 textView.add(textLabel);
@@ -76,6 +116,6 @@ buttonView2.add(buttonText2);
 mainWindow.open();
 
 //load require file
-var loadFile = require("fruit");
+//var loadFile = require("fruitOfSpirit");
 
 
