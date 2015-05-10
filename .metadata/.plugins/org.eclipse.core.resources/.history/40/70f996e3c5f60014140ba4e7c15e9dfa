@@ -15,7 +15,7 @@ var previousButton = function() {
 		i = 9;
 		j = 1;
 		textLabel.text = j + ". " + fruitOfSpirit[i];
-	} else if (i === "undefined" ) {
+	} else if (i  ) {
 		i = 9;
 		j = 9;
 		textLabel.text = j + ". " + fruitOfSpirit[i];

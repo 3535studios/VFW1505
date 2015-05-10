@@ -3,8 +3,12 @@
 var fruitOfSpirit = ["Love","Joy","Peace", "Patience", "Kindness", "Goodness", "Gentleness", "Faithfulness", "Self-Control"];
 
 //create previousButton function
-var previousButton = function() {
-	
+var previousButton = function(){
+	if ( i  ) {
+		i = 9;
+		j = 9;
+		textLabel.text = j + ". " + fruitOfSpirit[i];
+	}
 	
 	if (i < fruitOfSpirit.length) {
 		i --;
@@ -15,11 +19,7 @@ var previousButton = function() {
 		i = 9;
 		j = 1;
 		textLabel.text = j + ". " + fruitOfSpirit[i];
-	} else if (i === "undefined" ) {
-		i = 9;
-		j = 9;
-		textLabel.text = j + ". " + fruitOfSpirit[i];
-	}
+	} 
 };
 
 //create nextButton function 
@@ -30,7 +30,7 @@ var nextButton = function() {
 		j++;
 		textLabel.text = j + ". "+ fruitOfSpirit[i];
 		
-	} else if (i === fruitOfSpirit.length - 1) {
+	} else if (i === fruitOfSpirit.length -1) {
 		i = 0;
 		j = 1;
 		textLabel.text = j + ". " + fruitOfSpirit[i];
