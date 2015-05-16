@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Project2&apos; to &apos;McKinney_Sequester_Project2&apos;" description="Rename resource &apos;Project2&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Project2" name="McKinney_Sequester_Project2" stamp="1431812826215" updateReferences="true"/>
+</session>
