@@ -23,68 +23,40 @@ var border = Ti.UI.createView ({
 });
 
 var titleLabel = Ti.UI.createLabel({
-	text: "NAVY VESSELS",
-	font: {fontSize: 30, fontFamily: "Arial", fontWeight: "bold"},
+	text: "Navy Vessels",
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
 	top: 30,
 	width: "100%",
 	textAlign: "center"
 });
 
 //CUSTOM TABLE HEADER
-var carriersTableHeader = Ti.UI.createView ({
+var tableHeader = Ti.UI.createView ({
 	height: 50,
 	backgroundColor: "#042F56"
 });
 
-var carriersHeaderText = Ti.UI.createLabel ({
+var headerText = Ti.UI.createLabel ({
 	text: "Navy Carriers",
 	font: {fontSize: 22, fontWeight: "bold"},
 	color: "#fff"
 });
 
-carriersTableHeader.add(carriersHeaderText);
+tableHeader.add(headerText);
 
 //CUSTOM TABLE FOOTER
-var carriersTableFooter = Ti.UI.createView ({
+var tableFooter = Ti.UI.createView ({
 	height: 30,
-	backgroundColor: "#8297AB"
+	backgroundColor: "#032E55"
 });
 
-var carriersTableFooterText = Ti.UI.createLabel ({
+var footerText = Ti.UI.createLabel ({
 	text: "Warships",
 	font: {fontSize: 16, fontWeight: "normal"},
 	color: "#fff"
 });
 
-carriersTableFooter.add(carriersTableFooterText);
-
-//CUSTOM TABLE HEADER
-var submarinesTableHeader = Ti.UI.createView ({
-	height: 50,
-	backgroundColor: "#042F56"
-});
-
-var submarinesTableHeaderText = Ti.UI.createLabel ({
-	text: "Navy Submarines",
-	font: {fontSize: 22, fontWeight: "bold"},
-	color: "#fff"
-});
-
-submarinesTableHeader.add(submarinesTableHeaderText);
-
-//CUSTOM TABLE FOOTER
-var submarinesTableFooter = Ti.UI.createView ({
-	height: 30,
-	backgroundColor: "#8297AB"
-});
-
-var submarinesTableFooterText = Ti.UI.createLabel ({
-	text: "Silent Service",
-	font: {fontSize: 16, fontWeight: "normal"},
-	color: "#fff"
-});
-
-submarinesTableFooter.add(submarinesTableFooterText);
+tableFooter.add(footerText);
 
 // TABLE
 var navy = Ti.UI.createTableView ({
@@ -97,13 +69,15 @@ if(Ti.Platform.name === "iPhone OS" ) {
 
 // SECTIONS && ROWS
 var carriersSection = Ti.UI.createTableViewSection ({
-	headerView: carriersTableHeader,
-	footerView: carriersTableFooter
+	//headerTitle: "Navy Carriers",
+	//footerTitle: "Warships",
+	headerView: tableHeader,
+	footerView: tableFooter
 });
 
 var submarinesSection = Ti.UI.createTableViewSection ({
-	headerView: submarinesTableHeader,
-	footerView: submarinesTableFooter
+	headerTitle: "Navy Submarines",
+	footerTitle: "Silent Service"
 });
 
 for (i=0, j=carriers.length; i<j; i++) {

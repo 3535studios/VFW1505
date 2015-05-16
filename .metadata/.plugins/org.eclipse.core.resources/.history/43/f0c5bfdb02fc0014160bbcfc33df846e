@@ -23,8 +23,8 @@ var border = Ti.UI.createView ({
 });
 
 var titleLabel = Ti.UI.createLabel({
-	text: "NAVY VESSELS",
-	font: {fontSize: 30, fontFamily: "Arial", fontWeight: "bold"},
+	text: "Navy Vessels",
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
 	top: 30,
 	width: "100%",
 	textAlign: "center"
@@ -47,7 +47,7 @@ carriersTableHeader.add(carriersHeaderText);
 //CUSTOM TABLE FOOTER
 var carriersTableFooter = Ti.UI.createView ({
 	height: 30,
-	backgroundColor: "#8297AB"
+	backgroundColor: "#032E55"
 });
 
 var carriersTableFooterText = Ti.UI.createLabel ({
@@ -75,7 +75,7 @@ submarinesTableHeader.add(submarinesTableHeaderText);
 //CUSTOM TABLE FOOTER
 var submarinesTableFooter = Ti.UI.createView ({
 	height: 30,
-	backgroundColor: "#8297AB"
+	backgroundColor: "#032E55"
 });
 
 var submarinesTableFooterText = Ti.UI.createLabel ({
