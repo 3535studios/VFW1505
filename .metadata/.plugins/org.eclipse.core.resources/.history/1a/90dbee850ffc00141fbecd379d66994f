@@ -149,27 +149,18 @@ var getDetail = function() {
 		});
 		
 		var closeButton = Ti.UI.createLabel ({
-			text: "Close Window",
 			backgroundColor: "#333",
 			color: "#fff",
 			height: 50,
 			font: {fontSize: 12, fontFamily: "Arial"},
 			width: "100%",
-			bottom: 0,
-			textAlign: "center"
+			bottom: 0
 		});
-		
-		var closeWindow = function() {
-			detailWindow.close({transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT});
-		};
-		
-		closeButton.addEventListener("click", closeWindow);
-		
 		
 		detailTitleView.add(detailTitleLabel);
 		detailWindow.add(detailTitleView, detailBorder, detailText, closeButton);
 		
-		detailWindow.open({transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT});
+		detailWindow.open();
 };
 
 for (i=0, j=carriers.length; i<j; i++) {

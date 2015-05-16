@@ -169,7 +169,7 @@ var getDetail = function() {
 		detailTitleView.add(detailTitleLabel);
 		detailWindow.add(detailTitleView, detailBorder, detailText, closeButton);
 		
-		detailWindow.open({transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT});
+		detailWindow.open(transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT});
 };
 
 for (i=0, j=carriers.length; i<j; i++) {

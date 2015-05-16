@@ -142,34 +142,13 @@ var getDetail = function() {
 		
 		var detailText = Ti.UI.createLabel ({
 			text: this.desc,
-			font: {fontSize: 14, fontFamily: "Arial"},
-			top: detailBorder.height + detailBorder.top + 40,
-			left: 10,
-			right: 10
+			font: {fontSize: 20, fontFamily: "Arial"}
 		});
-		
-		var closeButton = Ti.UI.createLabel ({
-			text: "Close Window",
-			backgroundColor: "#333",
-			color: "#fff",
-			height: 50,
-			font: {fontSize: 12, fontFamily: "Arial"},
-			width: "100%",
-			bottom: 0,
-			textAlign: "center"
-		});
-		
-		var closeWindow = function() {
-			detailWindow.close({transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT});
-		};
-		
-		closeButton.addEventListener("click", closeWindow);
-		
 		
 		detailTitleView.add(detailTitleLabel);
-		detailWindow.add(detailTitleView, detailBorder, detailText, closeButton);
+		detailWindow.add(detailTitleView, detailBorder);
 		
-		detailWindow.open({transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT});
+		detailWindow.open();
 };
 
 for (i=0, j=carriers.length; i<j; i++) {
