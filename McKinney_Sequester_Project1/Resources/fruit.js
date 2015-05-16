@@ -9,16 +9,11 @@ var previousButton = function() {
 	if (i < fruitOfSpirit.length) {
 		i --;
 		j--;
-		textLabel.text = j + ". "+ fruitOfSpirit[i];
-		
-	} else if (i === fruitOfSpirit.length) {
-		i = 9;
-		j = 1;
-		textLabel.text = j + ". " + fruitOfSpirit[i];
-	} else if (i === "undefined" ) {
-		i = 9;
-		j = 9;
-		textLabel.text = j + ". " + fruitOfSpirit[i];
+		textLabel.text = j + ". "+ fruitOfSpirit[i];	
+	} 
+	
+	if (i < 0) {
+		i = fruitOfSpirit.length - 1;
 	}
 };
 

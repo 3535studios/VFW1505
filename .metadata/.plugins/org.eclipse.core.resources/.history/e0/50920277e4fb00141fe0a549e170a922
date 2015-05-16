@@ -1,0 +1,33 @@
+// Main Window Background Color
+Ti.UI.setBackgroundColor("#000");
+
+//Data
+var submarines = [{title: "Attack"}, {title: "Boomer"}, {title: "Guided Missile"}, {title: "Deep Submergence"}];
+
+var mainWindow = Ti.UI.createWindow ({
+	backgroundColor: "#f5f5f5"
+});
+
+var titleWindow = Ti.UI.createView ({
+	height: 65,
+	backgroundColor: "#fff",
+	top: 0
+});
+
+var border = Ti.UI.createView ({
+	backgroundColor: "#dbdbdb",
+	height: 1,
+	top: titleView.height + titleView.top
+});
+
+var titleLabel = Ti.UI.createLabel({
+	text: "Navy Submarines",
+	font: {fontSize: 20, fontFamily: "Arial", fontWeight: "bold"},
+	top: 30,
+	width: "100%",
+	textAlign: "center"
+});
+
+titleView.add(titleLabel);
+mainWindow.add(titleView, border);
+mainWindow.open();

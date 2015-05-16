@@ -1,8 +1,0 @@
-//set background color for UI
-Titanium.UI.setBackgroundColor('#000');
-
-//set main window for app
-
-
-//load require file
-var loadFile = require("fruit");
