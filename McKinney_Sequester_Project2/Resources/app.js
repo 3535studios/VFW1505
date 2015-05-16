@@ -13,9 +13,17 @@ var submarines = [
 	{title: "Deep Submergence", description: "When trouble happens beneath the waves, there is only one vessel to call on: the DSRV. They perform underwater rescue operations on disabled submarines for the US or foreign navies. They’re designed for quick deployment in the event of a submarine accident – transportable by truck, aircraft, ship or specially configured attack submarine. Many Sailors owe their lives to the capabilities of a DSRV and its crew."}
 	];
 
+
+
 // MAIN WINDOW BACKGROUND COLOR
 var mainWindow = Ti.UI.createWindow ({
+	title: "Navy Vessels",
 	backgroundColor: "#f5f5f5"
+});
+
+//NAVIGATION WINDOW
+var navWindow = Ti.UI.iOS.createNavigationWindow ({
+	window: mainWindow
 });
 
 var titleView = Ti.UI.createView ({
@@ -96,7 +104,7 @@ submarinesTableFooter.add(submarinesTableFooterText);
 
 // TABLE
 var navy = Ti.UI.createTableView ({
-	top: border.top + border.height
+	//top: border.top + border.height
 });
 
 if(Ti.Platform.name === "iPhone OS" ) {
@@ -116,7 +124,8 @@ var submarinesSection = Ti.UI.createTableViewSection ({
 
 titleView.add(titleLabel);
 mainWindow.add(titleView, border, navy);
-mainWindow.open();
+mainWindow.add(navy);
+navWindow.open();
 
 //load require file
 var loadFile = require("vessels");

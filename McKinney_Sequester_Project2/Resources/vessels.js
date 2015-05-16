@@ -1,6 +1,7 @@
 //GETDAIL FUNCTION FOR CARRIERS
 var getDetail = function() {
 	var detailWindow = Ti.UI.createWindow ({
+		title: this.text,
 		backgroundColor: "f5f5f5"
 	});
 	
@@ -22,7 +23,7 @@ var getDetail = function() {
 			top: 30,
 			width: "100%",
 			textAlign: "center"
-		});
+		}); 
 		
 		var detailText = Ti.UI.createLabel ({
 			text: this.desc,
@@ -32,28 +33,9 @@ var getDetail = function() {
 			right: 10
 		});
 		
-		var closeButton = Ti.UI.createLabel ({
-			text: "Close Window",
-			backgroundColor: "#333",
-			color: "#fff",
-			height: 50,
-			font: {fontSize: 12, fontFamily: "Arial"},
-			width: "100%",
-			bottom: 0,
-			textAlign: "center"
-		});
-		
-		var closeWindow = function() {
-			detailWindow.close({transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT});
-		};
-		
-		closeButton.addEventListener("click", closeWindow);
-		
-		
 		detailTitleView.add(detailTitleLabel);
-		detailWindow.add(detailTitleView, detailBorder, detailText, closeButton);
-		
-		detailWindow.open({transition: Ti.UI.iPhone.AnimationStyle.FLIP_FROM_LEFT});
+		detailWindow.add(detailTitleView, detailBorder, detailText);
+		navWindow.openWindow(detailWindow);
 };
 
 for (i=0, j=carriers.length; i<j; i++) {
@@ -75,8 +57,15 @@ for (i=0, j=carriers.length; i<j; i++) {
 for (i=0, j=submarines.length; i<j; i++) {
 	var theRow = Ti.UI.createTableViewRow ({
 		title: submarines[i].title,
+		desc: submarines[i].description,
 		hasChild: true
 	});
+	
+	if(Ti.Platform.name === "iPhone OS" ) {
+		theRow.hasChild = false;
+		theRow.hasDetail = true;
+}
+	
 	
 	submarinesSection.add(theRow);
 	theRow.addEventListener("click", getDetail);
