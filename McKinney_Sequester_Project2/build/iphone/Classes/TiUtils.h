@@ -39,7 +39,7 @@ typedef enum {
 } EncodingError;
 
 /**
- Project2 orientation flags.
+ McKinney_Sequester_Project2 orientation flags.
  */
 typedef enum
 {

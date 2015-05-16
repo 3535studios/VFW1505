@@ -27,7 +27,7 @@
 //	but is internal ONLY, and should NOT be used by javascript.
 @property(nonatomic,readwrite,assign) BOOL showsCancelButton;
 
-#pragma mark - Project2 Internal Use
+#pragma mark - McKinney_Sequester_Project2 Internal Use
 -(void)ensureSearchBarHeirarchy;
 @end
 

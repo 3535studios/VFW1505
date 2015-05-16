@@ -52,7 +52,7 @@
 @end
 
 /**
- Protocol for containment controller. Implemented by UIViewControllers that can host Project2 Windows
+ Protocol for containment controller. Implemented by UIViewControllers that can host McKinney_Sequester_Project2 Windows
  */
 @protocol TiControllerContainment <NSObject>
 @required

@@ -54,7 +54,7 @@
     NSInteger activeAlertControllerCount;
 }
 
-//Project2 Support
+//McKinney_Sequester_Project2 Support
 -(CGRect)resizeView;
 -(void)repositionSubviews;
 -(UIView *)topWindowProxyView;

@@ -7,8 +7,8 @@
  * WARNING: This is generated code. Modify at your own risk and without support.
  */
 
-#ifndef Project2_ThirdpartyNS_h
-#define Project2_ThirdpartyNS_h
+#ifndef McKinney_Sequester_Project2_ThirdpartyNS_h
+#define McKinney_Sequester_Project2_ThirdpartyNS_h
 
 #ifndef __TI_NAMESPACE_PREFIX_
 #define __TI_NAMESPACE_PREFIX_	TI

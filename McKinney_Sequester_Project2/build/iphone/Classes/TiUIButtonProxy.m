@@ -68,10 +68,10 @@
 {
 	switch((int)styleCache)
 	{
-		case UIProject2NativeItemInfoLight:
-		case UIProject2NativeItemInfoDark:
+		case UIMcKinney_Sequester_Project2NativeItemInfoLight:
+		case UIMcKinney_Sequester_Project2NativeItemInfoDark:
 			return 18;
-		case UIProject2NativeItemDisclosure:
+		case UIMcKinney_Sequester_Project2NativeItemDisclosure:
 			return 29;
 		default: {
 			break;
@@ -84,10 +84,10 @@
 {
 	switch((int)styleCache)
 	{
-		case UIProject2NativeItemInfoLight:
-		case UIProject2NativeItemInfoDark:
+		case UIMcKinney_Sequester_Project2NativeItemInfoLight:
+		case UIMcKinney_Sequester_Project2NativeItemInfoDark:
 			return 19;
-		case UIProject2NativeItemDisclosure:
+		case UIMcKinney_Sequester_Project2NativeItemDisclosure:
 			return 31;
 		default: {
 			break;
@@ -101,9 +101,9 @@
 {
 	switch ((int)styleCache)
 	{
-		case UIProject2NativeItemInfoLight:
-		case UIProject2NativeItemInfoDark:
-		case UIProject2NativeItemDisclosure:
+		case UIMcKinney_Sequester_Project2NativeItemInfoLight:
+		case UIMcKinney_Sequester_Project2NativeItemInfoDark:
+		case UIMcKinney_Sequester_Project2NativeItemDisclosure:
 			return suggestedResizing & ~(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight);
 		default: {
 			break;

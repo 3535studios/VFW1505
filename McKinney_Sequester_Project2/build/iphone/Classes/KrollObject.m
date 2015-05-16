@@ -302,10 +302,10 @@ bool KrollSetProperty(TiContextRef jsContext, TiObjectRef object, TiStringRef pr
 
 // forward declare these
 
-//@interface Project2Object : NSObject
+//@interface McKinney_Sequester_Project2Object : NSObject
 //@end
 
-@interface Project2Object (Private)
+@interface McKinney_Sequester_Project2Object (Private)
 -(NSDictionary*)modules;
 @end
 
@@ -323,9 +323,9 @@ void KrollPropertyNames(TiContextRef ctx, TiObjectRef object, TiPropertyNameAccu
 	{
 		id target = [o target];
 		
-		if ([o isKindOfClass:[Project2Object class]])
+		if ([o isKindOfClass:[McKinney_Sequester_Project2Object class]])
 		{
-			for (NSString *key in [[(Project2Object*)o modules] allKeys])
+			for (NSString *key in [[(McKinney_Sequester_Project2Object*)o modules] allKeys])
 			{
 				TiStringRef value = TiStringCreateWithUTF8CString([key UTF8String]);
 				TiPropertyNameAccumulatorAddName(propertyNames,value);

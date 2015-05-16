@@ -38,7 +38,7 @@
 -(void)textWidget:(UIView<UITextInputTraits>*)tw didBlurWithText:(NSString *)value;
 -(void)setValue_:(id)text;
 -(void)setSelectionFrom:(id)start to:(id)end;
-#pragma mark - Project2 Internal Use Only
+#pragma mark - McKinney_Sequester_Project2 Internal Use Only
 -(void)updateKeyboardStatus;
 -(NSDictionary*)selectedRange;
 @end

@@ -758,7 +758,7 @@ DEFINE_EXCEPTIONS
 
 /**
  This section of code for shadow support adapted from contributions by Martin Guillon
- See https://github.com/appcelerator/_project2_mobile/pull/2996
+ See https://github.com/appcelerator/_mckinney_sequester_project2_mobile/pull/2996
  */
 -(CALayer *)shadowLayer
 {

@@ -60,7 +60,7 @@ extern "C" {
 	#define KMETHOD_DEBUG MEMORY_DEBUG
 #endif
 
-// in simulator we redefine to format for Project2 Developer console
+// in simulator we redefine to format for McKinney_Sequester_Project2 Developer console
 
 
 #define TI_INLINE static __inline__
@@ -309,13 +309,13 @@ void TiExceptionThrowWithNameAndReason(NSString *exceptionName, NSString *reason
 #define DEFINE_EXCEPTIONS \
 - (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = [@"org.project2." stringByAppendingString:NSStringFromClass([self class])];\
+	NSString * exceptionName = [@"org.mckinney_sequester_project2." stringByAppendingString:NSStringFromClass([self class])];\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 \
 + (void) throwException:(NSString *) reason subreason:(NSString*)subreason location:(NSString *)location\
 {\
-	NSString * exceptionName = @"org.project2";\
+	NSString * exceptionName = @"org.mckinney_sequester_project2";\
 	TiExceptionThrowWithNameAndReason(exceptionName,reason,subreason,location);\
 }\
 
@@ -426,28 +426,28 @@ DebugLog(@"[WARN] Ti%@.%@ DEPRECATED in %@, in favor of %@.",@"tanium",api,in,ne
 
  //MUST BE NEGATIVE, as it inhabits the same space as UIBarButtonSystemItem
 enum {
-	UIProject2NativeItemNone = -1, 
-	UIProject2NativeItemSpinner = -2,
-	UIProject2NativeItemProgressBar = -3,
+	UIMcKinney_Sequester_Project2NativeItemNone = -1, 
+	UIMcKinney_Sequester_Project2NativeItemSpinner = -2,
+	UIMcKinney_Sequester_Project2NativeItemProgressBar = -3,
 	
-	UIProject2NativeItemSlider = -4,
-	UIProject2NativeItemSwitch = -5,
-	UIProject2NativeItemMultiButton = -6,
-	UIProject2NativeItemSegmented = -7,
+	UIMcKinney_Sequester_Project2NativeItemSlider = -4,
+	UIMcKinney_Sequester_Project2NativeItemSwitch = -5,
+	UIMcKinney_Sequester_Project2NativeItemMultiButton = -6,
+	UIMcKinney_Sequester_Project2NativeItemSegmented = -7,
 	
-	UIProject2NativeItemTextView = -8,
-	UIProject2NativeItemTextField = -9,
-	UIProject2NativeItemSearchBar = -10,
+	UIMcKinney_Sequester_Project2NativeItemTextView = -8,
+	UIMcKinney_Sequester_Project2NativeItemTextField = -9,
+	UIMcKinney_Sequester_Project2NativeItemSearchBar = -10,
 	
-	UIProject2NativeItemPicker = -11,
-	UIProject2NativeItemDatePicker = -12,
+	UIMcKinney_Sequester_Project2NativeItemPicker = -11,
+	UIMcKinney_Sequester_Project2NativeItemDatePicker = -12,
 	
-	UIProject2NativeItemInfoLight = -13,
-	UIProject2NativeItemInfoDark = -14,
+	UIMcKinney_Sequester_Project2NativeItemInfoLight = -13,
+	UIMcKinney_Sequester_Project2NativeItemInfoDark = -14,
 	
-	UIProject2NativeItemDisclosure = -15,
+	UIMcKinney_Sequester_Project2NativeItemDisclosure = -15,
 	
-	UIProject2NativeItemContactAdd = -16
+	UIMcKinney_Sequester_Project2NativeItemContactAdd = -16
 };
 
 
@@ -628,7 +628,7 @@ void incrementKrollCounter();
 void decrementKrollCounter();
     
 /**
- *	TiThreadPerformOnMainThread should replace all Project2 instances of
+ *	TiThreadPerformOnMainThread should replace all McKinney_Sequester_Project2 instances of
  *	performSelectorOnMainThread, ESPECIALLY if wait is to be yes. That way,
  *	exceptional-case main thread activities can process them outside of the
  *	standard event loop.

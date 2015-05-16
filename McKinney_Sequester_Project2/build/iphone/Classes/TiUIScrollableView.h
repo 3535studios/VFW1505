@@ -33,7 +33,7 @@
     BOOL pageChanged;
 }
 
-#pragma mark - Project2 Internal Use Only
+#pragma mark - McKinney_Sequester_Project2 Internal Use Only
 -(void)manageRotation;
 -(UIScrollView*)scrollview;
 -(void)refreshScrollView:(CGRect)visibleBounds readd:(BOOL)readd;

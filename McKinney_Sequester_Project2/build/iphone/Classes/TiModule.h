@@ -13,7 +13,7 @@
 @class TiHost;
 
 /**
- The base class for all Project2 modules
+ The base class for all McKinney_Sequester_Project2 modules
  */
 @interface TiModule : TiProxy 
 {
@@ -51,30 +51,30 @@
 // lifecycle
 
 /**
- Project2 Platform calls this method on startup.
+ McKinney_Sequester_Project2 Platform calls this method on startup.
  */
 -(void)startup;
 
 /**
- Project2 Platform calls this method on shutdown.
+ McKinney_Sequester_Project2 Platform calls this method on shutdown.
  @param sender The sender of the event.
  */
 -(void)shutdown:(id)sender;
 
 /**
- Project2 Platform calls this method on suspend.
+ McKinney_Sequester_Project2 Platform calls this method on suspend.
  @param sender The sender of the event.
  */
 -(void)suspend:(id)sender;
 
 /**
- Project2 Platform calls this method on entering background.
+ McKinney_Sequester_Project2 Platform calls this method on entering background.
  @param sender The sender of the event.
  */
 -(void)paused:(id)sender;
 
 /**
- Project2 Platform calls this method on resume.
+ McKinney_Sequester_Project2 Platform calls this method on resume.
  @param sender The sender of the event.
  */
 -(void)resume:(id)sender;

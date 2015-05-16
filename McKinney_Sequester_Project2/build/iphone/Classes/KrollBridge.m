@@ -30,7 +30,7 @@ extern NSString * const TI_APPLICATION_DEPLOYTYPE;
 extern NSString * const TI_APPLICATION_GUID;
 extern NSString * const TI_APPLICATION_BUILD_TYPE;
 
-NSString * Project2$ModuleRequireFormat = @"(function(exports){"
+NSString * McKinney_Sequester_Project2$ModuleRequireFormat = @"(function(exports){"
 		"var __OXP=exports;var module={'exports':exports};var __dirname=\"%@\";var __filename=\"%@\";%@;\n"
 		"if(module.exports !== __OXP){return module.exports;}"
 		"return exports;})({})";
@@ -40,7 +40,7 @@ NSString * Project2$ModuleRequireFormat = @"(function(exports){"
 void TiBindingRunLoopAnnounceStart(TiBindingRunLoop runLoop);
 
 
-@implementation Project2Object
+@implementation McKinney_Sequester_Project2Object
 
 -(NSDictionary*)modules
 {
@@ -330,7 +330,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	[self removeProxies];
 	RELEASE_TO_NIL(preload);
 	RELEASE_TO_NIL(context);
-	RELEASE_TO_NIL(_project2);
+	RELEASE_TO_NIL(_mckinney_sequester_project2);
 	OSSpinLockLock(&krollBridgeRegistryLock);
 	CFSetRemoveValue(krollBridgeRegistry, self);
 	OSSpinLockUnlock(&krollBridgeRegistryLock);
@@ -538,7 +538,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 -(void)gc
 {
 	[context gc];
-	[_project2 gc];
+	[_mckinney_sequester_project2 gc];
 }
 
 #pragma mark Delegate
@@ -550,18 +550,18 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 
 -(void)didStartNewContext:(KrollContext*)kroll
 {
-	// create Project2 global object
+	// create McKinney_Sequester_Project2 global object
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
     
-    // Load the "Project2" object into the global scope
+    // Load the "McKinney_Sequester_Project2" object into the global scope
 	NSString *basePath = (url==nil) ? [TiHost resourcePath] : [[[url path] stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"."];
-	_project2 = [[Project2Object alloc] initWithContext:kroll host:host context:self baseURL:[NSURL fileURLWithPath:basePath]];
+	_mckinney_sequester_project2 = [[McKinney_Sequester_Project2Object alloc] initWithContext:kroll host:host context:self baseURL:[NSURL fileURLWithPath:basePath]];
 	
 	TiContextRef jsContext = [kroll context];
-	TiValueRef tiRef = [KrollObject toValue:kroll value:_project2];
+	TiValueRef tiRef = [KrollObject toValue:kroll value:_mckinney_sequester_project2];
 	
-	NSString *_project2NS = [NSString stringWithFormat:@"T%sanium","it"];
-	TiStringRef prop = TiStringCreateWithCFString((CFStringRef) _project2NS);
+	NSString *_mckinney_sequester_project2NS = [NSString stringWithFormat:@"T%sanium","it"];
+	TiStringRef prop = TiStringCreateWithCFString((CFStringRef) _mckinney_sequester_project2NS);
 	TiStringRef prop2 = TiStringCreateWithCFString((CFStringRef) [NSString stringWithFormat:@"%si","T"]);
 	TiObjectRef globalRef = TiContextGetGlobalObject(jsContext);
 	TiObjectSetProperty(jsContext, globalRef, prop, tiRef,
@@ -583,7 +583,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	{
 		for (NSString *name in preload)
 		{
-			KrollObject *ti = (KrollObject*)[_project2 valueForKey:name];
+			KrollObject *ti = (KrollObject*)[_mckinney_sequester_project2 valueForKey:name];
 			NSDictionary *values = [preload valueForKey:name];
 			for (id key in values)
 			{
@@ -623,7 +623,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 		NSNotification *notification = [NSNotification notificationWithName:kTiContextShutdownNotification object:self];
 		[[NSNotificationCenter defaultCenter] postNotification:notification];
 	}
-	[_project2 gc];
+	[_mckinney_sequester_project2 gc];
 	
 	if (shutdownCondition)
 	{
@@ -638,7 +638,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 {
 	TiThreadPerformOnMainThread(^{[self unregisterForMemoryWarning];}, NO);
 	[self removeProxies];
-	RELEASE_TO_NIL(_project2);
+	RELEASE_TO_NIL(_mckinney_sequester_project2);
     RELEASE_TO_NIL(console);
 	RELEASE_TO_NIL(context);
 	RELEASE_TO_NIL(preload);
@@ -745,7 +745,7 @@ CFMutableSetRef	krollBridgeRegistry = nil;
 	 */
 	
 	NSString *filename = [sourceURL lastPathComponent];
-	NSString *js = [[NSString alloc] initWithFormat:Project2$ModuleRequireFormat, dirname, filename,code];
+	NSString *js = [[NSString alloc] initWithFormat:McKinney_Sequester_Project2$ModuleRequireFormat, dirname, filename,code];
 
 	/* This most likely should be integrated with normal code flow, but to
 	 * minimize impact until a in-depth reconsideration of KrollContext can be
@@ -922,7 +922,7 @@ loadNativeJS:
         }
 		if (![wrapper respondsToSelector:@selector(replaceValue:forKey:notification:)]) {
             [self setCurrentURL:oldURL];
-			@throw [NSException exceptionWithName:@"org.project2.kroll" 
+			@throw [NSException exceptionWithName:@"org.mckinney_sequester_project2.kroll" 
                                            reason:[NSString stringWithFormat:@"Module \"%@\" failed to leave a valid exports object",path] 
                                          userInfo:nil];
 		}

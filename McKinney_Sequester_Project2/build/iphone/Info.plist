@@ -14,15 +14,15 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.mckinney.project2</string>
+			<string>com.mckinney.sequeter.project2</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>project2</string>
+				<string>mckinney_sequester_project2</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.mckinney.project2</string>
+	<string>com.mckinney.sequeter.project2</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

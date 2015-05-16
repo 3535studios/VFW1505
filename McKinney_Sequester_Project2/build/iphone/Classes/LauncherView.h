@@ -9,9 +9,9 @@
 
 
 // A good bit of this code was derived from the Three20 project
-// and was customized to work inside Project2
+// and was customized to work inside McKinney_Sequester_Project2
 //
-// All modifications by Project2 are licensed under 
+// All modifications by McKinney_Sequester_Project2 are licensed under 
 // the Apache License, Version 2.0
 //
 //

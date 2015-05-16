@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;McKinney_Sequester_Project2/Resources/vessels&apos; to &apos;vessels.js&apos;" description="Rename resource &apos;vessels&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Resources/vessels" name="vessels.js" stamp="1431812982761" updateReferences="true"/>
+</session>

@@ -19,9 +19,9 @@
 
 #ifdef KROLL_COVERAGE
 # import "KrollCoverage.h"
-@interface Project2Object : KrollCoverageObject {
+@interface McKinney_Sequester_Project2Object : KrollCoverageObject {
 #else
-@interface Project2Object : KrollObject {
+@interface McKinney_Sequester_Project2Object : KrollObject {
 #endif
 @private
 	NSMutableDictionary *modules;
@@ -35,7 +35,7 @@
 -(TiModule*)moduleNamed:(NSString*)name context:(id<TiEvaluator>)context;
 @end
 
-extern NSString * Project2$ModuleRequireFormat;
+extern NSString * McKinney_Sequester_Project2$ModuleRequireFormat;
 
 @interface KrollBridge : Bridge<TiEvaluator,KrollDelegate> {
 @private
@@ -44,7 +44,7 @@ extern NSString * Project2$ModuleRequireFormat;
 	KrollContext *context;
 	NSDictionary *preload;
 	NSMutableDictionary *modules;
-	Project2Object *_project2;
+	McKinney_Sequester_Project2Object *_mckinney_sequester_project2;
     KrollObject* console;
 	BOOL shutdown;
     BOOL evaluationError;

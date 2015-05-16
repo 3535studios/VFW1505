@@ -157,7 +157,7 @@
 		if (resultClass==nil)
 		{
 			DebugLog(@"[WARN] Attempted to load %@: Could not find class definition.",className);
-			@throw [NSException exceptionWithName:@"org.project2.module" 
+			@throw [NSException exceptionWithName:@"org.mckinney_sequester_project2.module" 
 										   reason:[NSString stringWithFormat:@"invalid method (%@) passed to %@",name,[self class]] 
 										 userInfo:nil];
 		}
@@ -228,7 +228,7 @@
 
 -(id)bindCommonJSModule:(NSString*)code
 {
-	NSString *js = [[NSString alloc] initWithFormat:Project2$ModuleRequireFormat,code];
+	NSString *js = [[NSString alloc] initWithFormat:McKinney_Sequester_Project2$ModuleRequireFormat,code];
 	
 	id result = [[self pageContext] evalJSAndWait:js];
 	[js release];

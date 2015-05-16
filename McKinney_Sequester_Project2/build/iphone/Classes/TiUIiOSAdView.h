@@ -21,7 +21,7 @@
 
 @property (nonatomic, readonly) ADBannerView* adview;
 
-#pragma mark - Project2 Internal Use
+#pragma mark - McKinney_Sequester_Project2 Internal Use
 -(CGFloat)contentHeightForWidth:(CGFloat)value;
 -(CGFloat)contentWidthForWidth:(CGFloat)value;
 @end

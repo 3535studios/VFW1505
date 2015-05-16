@@ -1,8 +1,8 @@
 /**
- * Project2 Project2 License
- * This source code and all modifications done by Project2
+ * McKinney_Sequester_Project2 McKinney_Sequester_Project2 License
+ * This source code and all modifications done by McKinney_Sequester_Project2
  * are licensed under the Apache Public License (version 2) and
- * are Copyright (c) 2009-2014 by Project2, Inc.
+ * are Copyright (c) 2009-2014 by McKinney_Sequester_Project2, Inc.
  */
 
 /*

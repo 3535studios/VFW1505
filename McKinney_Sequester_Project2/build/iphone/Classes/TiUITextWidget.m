@@ -255,7 +255,7 @@
 }
 
 
-#pragma mark - Project2 Internal Use Only
+#pragma mark - McKinney_Sequester_Project2 Internal Use Only
 -(void)updateKeyboardStatus
 {
     if ( ([[[TiApp app] controller] keyboardVisible]) && ([[[TiApp app] controller] keyboardFocusedProxy] == [self proxy]) ) {

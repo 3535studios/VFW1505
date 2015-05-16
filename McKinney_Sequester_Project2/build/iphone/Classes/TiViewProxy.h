@@ -17,7 +17,7 @@
  */
 @protocol TiKeyboardFocusableView
 
-#pragma mark Public Project2 APIs.
+#pragma mark Public McKinney_Sequester_Project2 APIs.
 
 /**
  Tells the view to focus.
