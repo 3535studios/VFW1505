@@ -1,0 +1,33 @@
+Logger started at: Friday, May 22, 2015 5:11:43 AM EDT
+Component: com.appcelerator.titanium.ios.core
+Version: 1.0.0.1411756658
+[11:43.582] Sent: >21*1432285903581*version<
+[11:43.582] Recv: >1432285903581*2*3.6.0<
+[11:43.583] Sent: >36*1432285903582*option*monitorXHR*true<
+[11:43.584] Recv: >1432285903582<
+[11:43.584] Sent: >45*1432285903583*option*stepFiltersEnabled*false<
+[11:43.585] Recv: >1432285903583<
+[11:43.585] Sent: >45*1432285903584*option*suspendOnFirstLine*false<
+[11:43.585] Recv: >1432285903584<
+[11:43.585] Sent: >46*1432285903585*option*suspendOnExceptions*false<
+[11:43.586] Recv: >1432285903585<
+[11:43.586] Sent: >41*1432285903586*option*suspendOnErrors*true<
+[11:43.586] Recv: >1432285903586<
+[11:43.586] Sent: >43*1432285903587*option*suspendOnKeywords*true<
+[11:43.587] Recv: >1432285903587<
+[11:43.587] Sent: >45*1432285903588*option*bypassConstructors*false<
+[11:43.587] Recv: >1432285903588<
+[11:43.587] Sent: >45*1432285903589*option*stepFiltersEnabled*false<
+[11:43.588] Recv: >1432285903589<
+[11:43.588] Sent: >30*1432285903590*detailFormatters<
+[11:43.588] Recv: >1432285903590<
+[11:43.588] Sent: >20*1432285903591*enable<
+[11:43.589] Recv: >1432285903591<
+[11:43.611] Recv: >threads*created*0*kroll$1<
+[11:43.614] Recv: >log*out*[DEBUG] Loading: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B1044BC1-B045-4DCB-8C9F-1BAD699F4793/data/Containers/Bundle/Application/D99A73A2-C823-4366-AD3B-D3D5AA9CD2B9/McKinney_Sequester_Project3.app/app.js, Resource: app_js<
+[11:43.615] Recv: >scripts*created*1|app:/app.js||1|35<
+[11:43.615] Recv: >resumed*0*started<
+[11:43.617] Recv: >log*out*[DEBUG] Loading: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B1044BC1-B045-4DCB-8C9F-1BAD699F4793/data/Containers/Bundle/Application/D99A73A2-C823-4366-AD3B-D3D5AA9CD2B9/McKinney_Sequester_Project3.app/_app_props_.json, Resource: _app_props__json<
+[11:43.679] Recv: >log*out*[DEBUG] Loading: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B1044BC1-B045-4DCB-8C9F-1BAD699F4793/data/Containers/Bundle/Application/D99A73A2-C823-4366-AD3B-D3D5AA9CD2B9/McKinney_Sequester_Project3.app/gallery.js, Resource: gallery_js<
+[11:43.680] Recv: >scripts*created*2|app:/gallery.js||1|2<
+[11:43.680] Recv: >log*out*[DEBUG] Application booted in 186.487019 ms<

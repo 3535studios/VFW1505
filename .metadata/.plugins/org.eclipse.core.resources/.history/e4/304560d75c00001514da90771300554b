@@ -1,0 +1,14 @@
+
+
+
+
+//MAIN WINDOW
+var mainWindow = Ti.UI.createWindow ({
+	backgroundColor: "#eee"
+});
+
+mainWindow.open();
+
+
+//LOAD REQUIRED FILE
+loadFile = require("gallery.js");

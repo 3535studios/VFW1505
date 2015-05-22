@@ -1,0 +1,28 @@
+// APP BACKGROUND COLOR
+Ti.UI.setBackgroundColor("#000");
+
+
+//MAIN WINDOW
+var mainWindow = Ti.UI.createWindow ({
+	backgroundColor: "#eee"
+});
+
+var imageBackground = Ti.UI.createImageView ({
+		image: "images/background/navy-submarine-1920x1200.jpg",
+		layout: "vertical"
+	});
+	
+var openGalleryButton = Ti.UI.createView ({
+	backgroundColor: "#fff",
+	width: 100,
+	height: 50,
+	top: 20 + image.height
+});
+
+
+mainWindow.add(imageBackground);
+mainWindow.open();
+
+
+//LOAD REQUIRED FILE
+var loadFile = require("gallery");
