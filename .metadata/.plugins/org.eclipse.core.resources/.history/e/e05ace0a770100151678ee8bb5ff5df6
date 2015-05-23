@@ -1,0 +1,9 @@
+//OPEN FULL GALLERY WINDOW
+var getGallery = function() {
+	var fullGallery = Ti.UI.createWindow ({
+		backgroundColor: "#fff"
+	});
+	navWindow.openWindow(fullGallery);
+};
+
+openGalleryLabel.addEventListener("click",getGallery);
