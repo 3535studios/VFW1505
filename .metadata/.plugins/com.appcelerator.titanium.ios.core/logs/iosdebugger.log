@@ -31,3 +31,4 @@ Version: 1.0.0.1411756658
 [11:43.679] Recv: >log*out*[DEBUG] Loading: /Users/sequestermckinney/Library/Developer/CoreSimulator/Devices/B1044BC1-B045-4DCB-8C9F-1BAD699F4793/data/Containers/Bundle/Application/D99A73A2-C823-4366-AD3B-D3D5AA9CD2B9/McKinney_Sequester_Project3.app/gallery.js, Resource: gallery_js<
 [11:43.680] Recv: >scripts*created*2|app:/gallery.js||1|2<
 [11:43.680] Recv: >log*out*[DEBUG] Application booted in 186.487019 ms<
+----------End of file----------
