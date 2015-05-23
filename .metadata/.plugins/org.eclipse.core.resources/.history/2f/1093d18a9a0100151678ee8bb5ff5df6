@@ -3,9 +3,9 @@ var imagesFolder = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "imag
 var imageFiles = imagesFolder.getDirectoryListing();
 var pWidth = Ti.Platform.displayCaps.platformWidth;
 var pHeight = Ti.Platform.displayCaps.platformHeight;
-var rowCount = 4;
-var margin = 5;
-var trueCanvasWidth = pWidth - (rowCount * (margin * 2));
+var rowCount = 3;
+var margin = 10;
+var trueCanvasWidth = pWidth - (rowCount * margin);
 var size =  trueCanvasWidth / rowCount;
 
 //OPEN FULL GALLERY WINDOW

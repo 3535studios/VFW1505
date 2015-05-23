@@ -1,11 +1,10 @@
 //SETUP GRID FOR IMAGES
-var imagesFolder = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images/gallery");
-var imageFiles = imagesFolder.getDirectoryListing();
 var pWidth = Ti.Platform.displayCaps.platformWidth;
 var pHeight = Ti.Platform.displayCaps.platformHeight;
-var rowCount = 4;
-var margin = 5;
-var trueCanvasWidth = pWidth - (rowCount * (margin * 2));
+var itemCount = 33;
+var rowCount = 3;
+var margin = 10;
+var trueCanvasWidth = pWidth - (rowCount * margin) - margin;
 var size =  trueCanvasWidth / rowCount;
 
 //OPEN FULL GALLERY WINDOW
@@ -22,33 +21,31 @@ var border = Ti.UI.createView ({
 	width: pWidth,
 	top: 20
 });
-
+	
 var viewContainer = Ti.UI.createScrollView ({
-	top: 0,
+	top: margin + margin,
 	width: pWidth,
 	contentWidth: pWidth,
-	height: pHeight - border.height - border.top,
 	showVerticalScrollIndicator: true,
 	backgroundColor: "#fef",
 	layout: "horizontal"
 });
 	
-for (var i=0; i<imageFiles.length; i++) {
-		var view = Ti.UI.createView ({
-			backgroundColor: "#33CCFF",
-			left: margin,
-			right: margin,
-			top: 20,
-			width: size,
-			height: size,
-			borderRadius: 10
+for (var i=0; i<itemCount; i++) {
+	var view = Ti.UI.createView({
+		backgroundColor: "#33CCFF",
+		top: margin,
+		left: margin,
+		width: size,
+		height: size
 	});
 	
-	var thumb = Ti.UI.createImageView ({
-		image: "images/gallery/" + imageFiles[i]
+	var text = Ti.UI.createLabel({
+		text: i+1,
+		color: "#fff"
 	});
 	
-	view.add(thumb);
+	view.add(text);
 	viewContainer.add(view);
 }	
 	

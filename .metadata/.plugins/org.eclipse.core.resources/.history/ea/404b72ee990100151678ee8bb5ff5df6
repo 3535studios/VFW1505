@@ -4,8 +4,8 @@ var imageFiles = imagesFolder.getDirectoryListing();
 var pWidth = Ti.Platform.displayCaps.platformWidth;
 var pHeight = Ti.Platform.displayCaps.platformHeight;
 var rowCount = 4;
-var margin = 5;
-var trueCanvasWidth = pWidth - (rowCount * (margin * 2));
+var margin = 10;
+var trueCanvasWidth = pWidth - (rowCount * margin);
 var size =  trueCanvasWidth / rowCount;
 
 //OPEN FULL GALLERY WINDOW
@@ -48,6 +48,12 @@ for (var i=0; i<imageFiles.length; i++) {
 		image: "images/gallery/" + imageFiles[i]
 	});
 	
+	var text = Ti.UI.createLabel({
+		text: i+1,
+		color: "#fff"
+	});
+	
+	//view.add(text);
 	view.add(thumb);
 	viewContainer.add(view);
 }	
