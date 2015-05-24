@@ -21,7 +21,6 @@ var getGalleryDetail = function(dataSource) {
 	
 		var fullSizeImage = Ti.UI.createImageView ({
 		  image: dataSource,
-		  title.dataSource.text
 		});
 	
 }
