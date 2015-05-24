@@ -1,2 +1,2 @@
-FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Sat May 16 19\:20\:59 EDT 2015\n1\=vessels\n0\=desc\n
+FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Sat May 23 18\:50\:11 EDT 2015\n3\=vessels\n2\=desc\n1\=//CUSTOM TABLE HEADER\\nvar submarinesTableHeader \\\= Ti.UI.createView ({\\n\\theight\\\: 50,\\n\\tbackgroundColor\\\: "\\\#042F56"\\n});\\n\\nvar submarinesTableHeaderText \\\= Ti.UI.createLabel ({\\n\\ttext\\\: "Navy Submarines",\\n\\tfont\\\: {fontSize\\\: 22, fontWeight\\\: "bold"},\\n\\tcolor\\\: "\\\#fff"\\n});\\n\\nsubmarinesTableHeader.add(submarinesTableHeaderText);\n0\=titleView\n
 eclipse.preferences.version=1

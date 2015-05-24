@@ -1,0 +1,86 @@
+//SETUP GRID FOR IMAGES
+var imagesFolder = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images/gallery");
+var imageFiles = imagesFolder.getDirectoryListing();
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var rowCount = 4;
+var margin = 5;
+var trueCanvasWidth = pWidth - (rowCount * (margin * 2));
+var size =  trueCanvasWidth / rowCount;
+
+//OPEN FULL GALLERY WINDOW
+var getGallery = function() {
+	var galleryWindow = Ti.UI.createWindow ({
+		backgroundColor: "#fff",
+		layout: "horizontal",
+		title: "Full Gallery"
+		
+	});
+	
+var galleryBorder = Ti.UI.createView ({
+		backgroundColor: "#dbdbdb",
+		height: 1,
+		top: 20
+});
+
+
+var galleryTitleView = Ti.UI.createView ({
+		height: 65,
+		backgroundColor: "#fff",
+		top: 0
+});
+	
+
+var galleryLabel = Ti.UI.createLabel ({
+			text: this.title,
+			font: {fontSize: 30, fontFamily: "Arial", fontWeight: "bold"},
+			top: 30,
+			width: "100%",
+			textAlign: "center"
+}); 
+		
+
+var viewContainer = Ti.UI.createScrollView ({
+	top: 0,
+	width: pWidth,
+	contentWidth: pWidth,
+	height: pHeight - galleryBorder.height - galleryBorder.top,
+	showVerticalScrollIndicator: true,
+	backgroundColor: "#042F56",
+	layout: "horizontal",
+	title: "Full Gallery"
+});
+	
+for (var i=0; i<imageFiles.length; i++) {
+		var view = Ti.UI.createView ({
+			backgroundColor: "#33CCFF",
+			left: margin,
+			right: margin,
+			top: 20,
+			width: size,
+			height: size,
+			borderRadius: 10
+	});
+	
+	var thumb = Ti.UI.createImageView ({
+		image: "images/gallery/" + imageFiles[i],
+		title: "Full Gallery"
+	});
+	
+	view.add(thumb);
+	viewContainer.add(view);
+}	
+
+galleryTitleView.add(galleryLabel);
+galleryView.add(galleryBorder, galleryTitleView, viewContainer);
+navWindow.openWindow(galleryWindow);
+	
+};
+	
+openGalleryLabel.addEventListener("click",getGallery);
+		
+	
+
+
+
+

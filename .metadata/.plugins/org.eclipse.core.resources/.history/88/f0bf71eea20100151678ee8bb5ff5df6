@@ -1,0 +1,71 @@
+// APP BACKGROUND COLOR
+Ti.UI.setBackgroundColor("#000");
+
+
+//MAIN WINDOW
+var mainWindow = Ti.UI.createWindow ({
+	backgroundColor: "#eee",
+	title: "US Submarines"
+});
+
+var navWindow = Ti.UI.iOS.createNavigationWindow ({
+	window: mainWindow,
+});
+
+var imageBackground = Ti.UI.createImageView ({
+		image: "images/background/navy-submarine-1920x1200.jpg",
+		layout: "vertical"
+	});
+	
+var openGalleryButton = Ti.UI.createView ({
+	backgroundColor: "#6593B6",
+	borderRadius: 5,
+	width: 200,
+	height: 50,
+	top: imageBackground.height
+});
+
+var openGalleryLabel = Ti.UI.createLabel ({
+	text: "OPEN GALLERY",
+	color: "#fff",
+	align: "center"
+});
+
+//OPEN FULL GALLERY WINDOW
+var getGallery = function() {
+	var fullGallery = Ti.UI.createWindow ({
+		backgroundColor: "#fff",
+		layout: "horizontal",
+		title: mainWindow.title
+	});
+	
+var border = Ti.UI.createView ({
+	backgroundColor: "#cecece",
+	height: 1,
+	width: pWidth,
+	top: 20
+});
+
+var viewContainer = Ti.UI.createScrollView ({
+	top: 0,
+	width: pWidth,
+	contentWidth: pWidth,
+	height: pHeight - border.height - border.top,
+	showVerticalScrollIndicator: true,
+	backgroundColor: "#fef",
+	layout: "horizontal"
+});
+	
+
+mainWindow.add(imageBackground, openGalleryButton, openGalleryLabel);
+
+navWindow.openWindow(fullGallery);
+navWindow.add(border);
+navWindow.add(viewContainer);
+navWindow.open();
+
+openGalleryLabel.addEventListener("click",getGallery);
+
+
+//LOAD REQUIRED FILE
+var loadFile = require("gallery");
