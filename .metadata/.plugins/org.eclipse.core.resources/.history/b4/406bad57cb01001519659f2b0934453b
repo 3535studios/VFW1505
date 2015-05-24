@@ -23,15 +23,15 @@ var getGalleryDetail = function(dataSource) {
 		});
 		
 		var imageLabel = Ti.UI.createLabel ({
+			height: 50,
 			color: "#fff",
-			top: 20,
-			text: dataSource
+			title: dataSource
 		});
 	
 }
 	
-	imageView.add(fullSizeImage);
-	galleryDetailWindow.add(imageView,imageLabel);
+	imageView.add(imageLabel, fullSizeImage);
+	galleryDetailWindow.add(imageView);
 	navWindow.openWindow(galleryDetailWindow);
 };
 

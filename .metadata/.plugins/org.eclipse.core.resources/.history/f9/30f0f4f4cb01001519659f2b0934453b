@@ -19,11 +19,11 @@ var getGalleryDetail = function(dataSource) {
 		});
 	
 		var fullSizeImage = Ti.UI.createImageView ({
-		  image: dataSource
+		  image: dataSource,
+		  text: dataSource
 		});
 		
 		var imageLabel = Ti.UI.createLabel ({
-			color: "#fff",
 			top: 20,
 			text: dataSource
 		});

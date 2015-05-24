@@ -21,17 +21,11 @@ var getGalleryDetail = function(dataSource) {
 		var fullSizeImage = Ti.UI.createImageView ({
 		  image: dataSource
 		});
-		
-		var imageLabel = Ti.UI.createLabel ({
-			color: "#fff",
-			top: 20,
-			text: dataSource
-		});
 	
 }
 	
 	imageView.add(fullSizeImage);
-	galleryDetailWindow.add(imageView,imageLabel);
+	galleryDetailWindow.add(imageView);
 	navWindow.openWindow(galleryDetailWindow);
 };
 

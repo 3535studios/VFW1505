@@ -25,7 +25,7 @@ var getGalleryDetail = function(dataSource) {
 		var imageLabel = Ti.UI.createLabel ({
 			color: "#fff",
 			top: 20,
-			text: dataSource
+			text: dataSource.image
 		});
 	
 }

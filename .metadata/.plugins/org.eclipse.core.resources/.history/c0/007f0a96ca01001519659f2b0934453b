@@ -16,22 +16,17 @@ var getGalleryDetail = function(dataSource) {
 	for (var i=0; i<imageFiles.length; i++) {
 		var imageView = Ti.UI.createView ({
 			backgroundColor: "#042F56",
+			title: toString(dataSource)
 		});
 	
 		var fullSizeImage = Ti.UI.createImageView ({
-		  image: dataSource
-		});
-		
-		var imageLabel = Ti.UI.createLabel ({
-			color: "#fff",
-			top: 20,
-			text: dataSource
+		  image: dataSource,
 		});
 	
 }
 	
 	imageView.add(fullSizeImage);
-	galleryDetailWindow.add(imageView,imageLabel);
+	galleryDetailWindow.add(imageView);
 	navWindow.openWindow(galleryDetailWindow);
 };
 

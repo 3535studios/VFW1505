@@ -12,6 +12,7 @@ var size =  trueCanvasWidth / rowCount;
 var getGalleryDetail = function(dataSource) {
 	var galleryDetailWindow = Ti.UI.createWindow ({
 		backgroundColor: "#fff",
+		title: "Detail"
 	});
 	for (var i=0; i<imageFiles.length; i++) {
 		var imageView = Ti.UI.createView ({
@@ -19,19 +20,14 @@ var getGalleryDetail = function(dataSource) {
 		});
 	
 		var fullSizeImage = Ti.UI.createImageView ({
-		  image: dataSource
-		});
-		
-		var imageLabel = Ti.UI.createLabel ({
-			color: "#fff",
-			top: 20,
-			text: dataSource
+		  image: dataSource,
+		  title: dataSource.text
 		});
 	
 }
 	
 	imageView.add(fullSizeImage);
-	galleryDetailWindow.add(imageView,imageLabel);
+	galleryDetailWindow.add(imageView);
 	navWindow.openWindow(galleryDetailWindow);
 };
 
