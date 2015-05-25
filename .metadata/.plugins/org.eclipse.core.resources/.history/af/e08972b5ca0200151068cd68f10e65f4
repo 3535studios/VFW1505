@@ -3,7 +3,7 @@ var mainWindow = Ti.UI.createWindow ({
 	backgroundColor: "#401515",
 	title: "US NAVY SUBMARINES",
 	fontFamily: "ProximaNova-Semibold",
-	fontSize: "40px"
+	fontSize: 40
 });
 
 var navWindow = Ti.UI.iOS.createNavigationWindow ({
