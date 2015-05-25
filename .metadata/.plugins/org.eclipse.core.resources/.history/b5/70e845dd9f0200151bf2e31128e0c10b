@@ -19,14 +19,19 @@ var getGalleryDetail = function(dataSource) {
 		});
 	
 		var fullSizeImage = Ti.UI.createImageView ({
-		  image: dataSource,
-		  title: "Test"
+		  image: dataSource
+		});
+		
+		var imageLabel = Ti.UI.createLabel ({
+			color: "#fff",
+			top: 20,
+			text: dataSource
 		});
 	
 }
 	
 	imageView.add(fullSizeImage);
-	galleryDetailWindow.add(imageView);
+	galleryDetailWindow.add(imageView,imageLabel);
 	navWindow.openWindow(galleryDetailWindow);
 };
 
@@ -72,8 +77,7 @@ for (var i=0; i<imageFiles.length; i++) {
 
 //EVENT PROGATION
 viewContainer.addEventListener("click", function(event){
-	//getGalleryDetail(event.source.image);
-	console.log(event);
+	getGalleryDetail(event.source.image);
 });
 
 galleryWindow.add(viewContainer);

@@ -1,6 +1,7 @@
 //SETUP GRID FOR IMAGES
 var imagesFolder = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images/gallery");
 var imageFiles = imagesFolder.getDirectoryListing();
+var imageFileName = imagesFiles.name;
 var pWidth = Ti.Platform.displayCaps.platformWidth;
 var pHeight = Ti.Platform.displayCaps.platformHeight;
 var rowCount = 4;
@@ -16,17 +17,22 @@ var getGalleryDetail = function(dataSource) {
 	for (var i=0; i<imageFiles.length; i++) {
 		var imageView = Ti.UI.createView ({
 			backgroundColor: "#042F56",
-			title: toString(dataSource)
 		});
 	
 		var fullSizeImage = Ti.UI.createImageView ({
-		  image: dataSource,
+		  image: dataSource
+		});
+		
+		var imageLabel = Ti.UI.createLabel ({
+			color: "#fff",
+			top: 20,
+			text: imageFileName
 		});
 	
 }
 	
 	imageView.add(fullSizeImage);
-	galleryDetailWindow.add(imageView);
+	galleryDetailWindow.add(imageView,imageLabel);
 	navWindow.openWindow(galleryDetailWindow);
 };
 

@@ -1,8 +1,8 @@
 //SETUP GRID FOR IMAGES
 var imagesFolder = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images/gallery");
 var imageFiles = imagesFolder.getDirectoryListing();
-var pWidth = Ti.Platform.displayCaps.platformWidth;
 var pHeight = Ti.Platform.displayCaps.platformHeight;
+var pWidth = Ti.Platform.displayCaps.platformWidth;
 var rowCount = 4;
 var margin = 5;
 var trueCanvasWidth = pWidth - (rowCount * (margin * 2));

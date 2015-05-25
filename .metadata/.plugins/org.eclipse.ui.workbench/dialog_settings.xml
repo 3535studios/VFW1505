@@ -8,12 +8,13 @@
 		</list>
 		<list key="textArray">
 			<item value="documents"/>
+			<item value="documentation"/>
 		</list>
 		<list key="orderedElements">
 			<item value="org.eclipse.help.ui.ignoreMissingPlaceholders"/>
 		</list>
 		<list key="textEntries">
-			<item value="1"/>
+			<item value="2"/>
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
