@@ -78,6 +78,7 @@ for (var i=0; i<imageFiles.length; i++) {
 //EVENT PROGATION
 viewContainer.addEventListener("click", function(event){
 	getGalleryDetail(event.source.image);
+	//console.log(event.source.getImage(imageFiles));
 });
 
 galleryWindow.add(viewContainer);
