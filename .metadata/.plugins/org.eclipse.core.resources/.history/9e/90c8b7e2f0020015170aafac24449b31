@@ -1,0 +1,20 @@
+//Main Window
+var mainWindow = Ti.UI.createWindow ({
+	backgroundColor: "#401515",
+	title: "US NAVY SUBMARINES",
+	fontFamily: "OpenSans-Regular",
+	fontSize: 40
+});
+
+var galleryView = Ti.UI.createView ({
+	backgroundColor: "1c3d59",
+	height: "129px",
+	top: title.height
+});
+
+var navWindow = Ti.UI.iOS.createNavigationWindow ({
+	window: mainWindow,
+});
+
+navWindow.add(galleryView);
+navWindow.open();
