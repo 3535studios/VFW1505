@@ -1,0 +1,13 @@
+"Window": {
+	backgroundColor: "#fff"
+},
+"#spicyrice[platform=ios]": {
+	font: {
+		fontFamily: "Spicy Rice"
+	}
+},
+"#spicyrice[platform=android]": {
+	font: {
+		fontFamily: "SpicyRice-Regular"
+	}
+}

@@ -1,9 +1,7 @@
 //Main Window
 var mainWindow = Ti.UI.createWindow ({
 	backgroundColor: "#401515",
-	title: "US NAVY SUBMARINES",
-	fontFamily: "OpenSans-Regular",
-	fontSize: 40
+	title: "US NAVY SUBMARINES"
 });
 
 var galleryView = Ti.UI.createView ({
@@ -14,8 +12,31 @@ var galleryView = Ti.UI.createView ({
 
 var galleryLabel = Ti.UI.createLabel ({
 	text: "GALLERY",
-	fontFamily: "OpenSans-Semibold",
-	fontSize: 80,
+	font: {fontSize: 40, fontFamily: 'OpenSans-Regular'},
+	color: "#fff"
+});
+
+var classesView = Ti.UI.createView ({
+	backgroundColor: "517330",
+	height: "129px",
+	top: 120
+});
+
+var classesLabel = Ti.UI.createLabel ({
+	text: "CLASSES",
+	font: {fontSize: 40, fontFamily: 'OpenSans-Regular'},
+	color: "#fff",
+});
+
+var customView = Ti.UI.createView ({
+	backgroundColor: "bfb6aa",
+	height: "129px",
+	top: 180
+});
+
+var customLabel = Ti.UI.createLabel ({
+	text: "CUSTOM",
+	font: {fontSize: 40, fontFamily: 'OpenSans-Regular'},
 	color: "#fff"
 });
 
@@ -24,5 +45,7 @@ var navWindow = Ti.UI.iOS.createNavigationWindow ({
 });
 
 galleryView.add(galleryLabel);
-navWindow.add(galleryView);
+classesView.add(classesLabel);
+customView.add(customLabel);
+navWindow.add(galleryView, classesView, customView);
 navWindow.open();

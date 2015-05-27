@@ -136,5 +136,11 @@
 			<string>7.0</string>
 		</dict>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>/fonts/OpenSans-Light.ttf</string>
+		<string>/fonts/OpenSans-Regular.ttf</string>
+		<string>/fonts/OpenSans-Semibold.ttf</string>
+	</array>
 </dict>
 </plist>

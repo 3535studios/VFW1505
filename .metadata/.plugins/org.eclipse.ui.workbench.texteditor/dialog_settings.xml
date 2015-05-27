@@ -5,8 +5,10 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="titleView" key="selection"/>
+		<item value="ios" key="selection"/>
 		<list key="findhistory">
+			<item value="ios"/>
+			<item value="font"/>
 			<item value="titleView"/>
 			<item value="//CUSTOM TABLE HEADER&#x0A;var submarinesTableHeader = Ti.UI.createView ({&#x0A;&#x09;height: 50,&#x0A;&#x09;backgroundColor: &quot;#042F56&quot;&#x0A;});&#x0A;&#x0A;var submarinesTableHeaderText = Ti.UI.createLabel ({&#x0A;&#x09;text: &quot;Navy Submarines&quot;,&#x0A;&#x09;font: {fontSize: 22, fontWeight: &quot;bold&quot;},&#x0A;&#x09;color: &quot;#fff&quot;&#x0A;});&#x0A;&#x0A;submarinesTableHeader.add(submarinesTableHeaderText);"/>
 			<item value="desc"/>

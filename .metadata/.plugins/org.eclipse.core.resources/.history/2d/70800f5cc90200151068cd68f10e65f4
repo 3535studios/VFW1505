@@ -1,9 +1,0 @@
-//Main Window
-var mainWindow = Ti.UI.createWindow ({
-	backgroundColor: "#401515",
-	title: "US NAVY SUBMARINES",
-	fontFamily: "Proxima Nova Semibold",
-	fontSize: 40
-});
-
-mainWindow.open();

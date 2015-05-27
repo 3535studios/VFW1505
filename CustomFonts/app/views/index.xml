@@ -1,0 +1,5 @@
+<Alloy>
+	<Window title="Custom Font Example">
+		<Label id="spicyrice">This is SpicyRice Regular.</Label>
+	</Window>
+</Alloy>
