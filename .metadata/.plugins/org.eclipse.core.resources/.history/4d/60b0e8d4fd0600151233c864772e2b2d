@@ -1,0 +1,55 @@
+//Main Window
+var mainWindow = Ti.UI.createWindow ({
+	backgroundColor: "#401515",
+	title: "US NAVY SUBMARINES"
+});
+
+var galleryView = Ti.UI.createView ({
+	backgroundColor: "1c3d59",
+	height: "129px",
+	top: 0
+});
+
+var galleryLabel = Ti.UI.createLabel ({
+	text: "GALLERY",
+	font: {fontSize: 40, fontFamily: 'OpenSans-Regular'},
+	color: "#fff"
+});
+
+var classesView = Ti.UI.createView ({
+	backgroundColor: "517330",
+	height: "129px",
+	top: 60
+});
+
+var classesLabel = Ti.UI.createLabel ({
+	text: "CLASSES",
+	font: {fontSize: 40, fontFamily: 'OpenSans'},
+	color: "#fff",
+});
+
+var customView = Ti.UI.createView ({
+	backgroundColor: "bfb6aa",
+	height: "129px",
+	top: 120
+});
+
+var customLabel = Ti.UI.createLabel ({
+	text: "CUSTOM",
+	font: {fontSize: 40, fontFamily: 'OpenSans'},
+	color: "#fff"
+});
+
+var navWindow = Ti.UI.iOS.createNavigationWindow ({
+	window: mainWindow,
+});
+
+galleryView.add(galleryLabel);
+classesView.add(classesLabel);
+customView.add(customLabel);
+mainWindow.add(galleryView, classesView, customView);
+navWindow.open();
+
+//load require file
+var loadFile = require("gallery");
+var loadFile = require("classes");

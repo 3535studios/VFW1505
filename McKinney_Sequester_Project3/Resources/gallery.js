@@ -86,7 +86,7 @@ navWindow.openWindow(galleryWindow);
 	
 };
 	
-openGalleryLabel.addEventListener("click",getGallery);
+openGalleryView.addEventListener("click",getGallery);
 		
 	
 

@@ -7,7 +7,7 @@ var mainWindow = Ti.UI.createWindow ({
 var galleryView = Ti.UI.createView ({
 	backgroundColor: "1c3d59",
 	height: "129px",
-	top: 60
+	top: 0
 });
 
 var galleryLabel = Ti.UI.createLabel ({
@@ -19,7 +19,7 @@ var galleryLabel = Ti.UI.createLabel ({
 var classesView = Ti.UI.createView ({
 	backgroundColor: "517330",
 	height: "129px",
-	top: 120
+	top: 60
 });
 
 var classesLabel = Ti.UI.createLabel ({
@@ -31,7 +31,7 @@ var classesLabel = Ti.UI.createLabel ({
 var customView = Ti.UI.createView ({
 	backgroundColor: "bfb6aa",
 	height: "129px",
-	top: 180
+	top: 120
 });
 
 var customLabel = Ti.UI.createLabel ({
@@ -47,8 +47,10 @@ var navWindow = Ti.UI.iOS.createNavigationWindow ({
 galleryView.add(galleryLabel);
 classesView.add(classesLabel);
 customView.add(customLabel);
-navWindow.add(galleryView, classesView, customView);
+mainWindow.add(galleryView, classesView, customView);
 navWindow.open();
 
 //load require file
-var loadFile = require("classes","gallery");
+var loadFile = require("gallery");
+var loadFile = require("classes");
+var loadFile = require("custom");
