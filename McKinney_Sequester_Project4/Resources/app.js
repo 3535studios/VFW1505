@@ -24,7 +24,7 @@ var classesView = Ti.UI.createView ({
 
 var classesLabel = Ti.UI.createLabel ({
 	text: "CLASSES",
-	font: {fontSize: 40, fontFamily: 'OpenSans-Regular'},
+	font: {fontSize: 40, fontFamily: 'OpenSans'},
 	color: "#fff",
 });
 
@@ -36,7 +36,7 @@ var customView = Ti.UI.createView ({
 
 var customLabel = Ti.UI.createLabel ({
 	text: "CUSTOM",
-	font: {fontSize: 40, fontFamily: 'OpenSans-Regular'},
+	font: {fontSize: 40, fontFamily: 'OpenSans'},
 	color: "#fff"
 });
 
@@ -49,3 +49,6 @@ classesView.add(classesLabel);
 customView.add(customLabel);
 navWindow.add(galleryView, classesView, customView);
 navWindow.open();
+
+//load require file
+var loadFile = require("classes","gallery");
