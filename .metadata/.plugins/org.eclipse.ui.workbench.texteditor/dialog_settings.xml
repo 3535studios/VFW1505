@@ -5,14 +5,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="ios" key="selection"/>
+		<item value="submarinesSection" key="selection"/>
 		<list key="findhistory">
+			<item value="submarinesSection"/>
+			<item value="submarineSections"/>
+			<item value="for (i=0, j=submarines.length; i&lt;j; i++) {&#x0A;&#x09;var theRow = Ti.UI.createTableViewRow ({&#x0A;&#x09;&#x09;title: submarines[i].title,&#x0A;&#x09;&#x09;desc: submarines[i].description,&#x0A;&#x09;&#x09;hasChild: true&#x0A;&#x09;});&#x0A;&#x09;&#x0A;&#x09;if(Ti.Platform.name === &quot;iPhone OS&quot; ) {&#x0A;&#x09;&#x09;theRow.hasChild = false;&#x0A;&#x09;&#x09;theRow.hasDetail = true;&#x0A;}&#x0A;&#x09;&#x0A;&#x09;&#x0A;&#x09;submarinesSection.add(theRow);&#x0A;&#x09;theRow.addEventListener(&quot;click&quot;, getDetail);&#x0A;}&#x0A;&#x0A;var navySections = [carriersSection, submarinesSection];&#x0A;&#x0A;//setData method&#x0A;navy.setData(navySections);"/>
+			<item value="margin"/>
 			<item value="ios"/>
 			<item value="font"/>
 			<item value="titleView"/>
 			<item value="//CUSTOM TABLE HEADER&#x0A;var submarinesTableHeader = Ti.UI.createView ({&#x0A;&#x09;height: 50,&#x0A;&#x09;backgroundColor: &quot;#042F56&quot;&#x0A;});&#x0A;&#x0A;var submarinesTableHeaderText = Ti.UI.createLabel ({&#x0A;&#x09;text: &quot;Navy Submarines&quot;,&#x0A;&#x09;font: {fontSize: 22, fontWeight: &quot;bold&quot;},&#x0A;&#x09;color: &quot;#fff&quot;&#x0A;});&#x0A;&#x0A;submarinesTableHeader.add(submarinesTableHeaderText);"/>
-			<item value="desc"/>
-			<item value="vessels"/>
 		</list>
 	</section>
 </section>

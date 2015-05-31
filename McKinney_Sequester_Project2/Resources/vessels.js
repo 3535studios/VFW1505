@@ -1,4 +1,4 @@
-//GETDAIL FUNCTION FOR CARRIERS
+//GETDAIL FUNCTION
 var getDetail = function() {
 	var detailWindow = Ti.UI.createWindow ({
 		title: this.text,
@@ -61,7 +61,7 @@ for (i=0, j=submarines.length; i<j; i++) {
 		hasChild: true
 	});
 	
-	if(Ti.Platform.name === "iPhone OS" ) {
+	if (Ti.Platform.name === "iPhone OS" ) {
 		theRow.hasChild = false;
 		theRow.hasDetail = true;
 }

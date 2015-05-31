@@ -1,0 +1,53 @@
+var imagesFolder = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images/gallery");
+var imageFiles = imagesFolder.getDirectoryListing();
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+
+var getGalleryImage = function() {
+	var galleryWindow = Ti.UI.createWindow ({
+		backgroundColor: "#fff",
+		layout: "horizontal",
+		title: "Submarine Gallery"
+	});
+	
+	
+	for (var i=0; i<imageFiles.length; i++) {
+		var imageView = Ti.UI.createView ({
+			backgroundColor: "#042F56",
+		});
+	
+		var fullSizeImage = Ti.UI.createImageView ({
+		  image: "images/gallery/" + imageFiles[i]
+		});
+		
+	}
+	
+	imageView.add(fullSizeImage);
+	galleryWindow.add(imageView);
+	
+	var getNewImage = Ti.UI.createView ({
+			backgroundColor: "#000",
+			height: "129px",
+			top: 200
+	});
+
+	var getNewImageLabel = Ti.UI.createLabel ({
+		color: "#fff",
+		text: "NEW IMAGE",
+	});
+	
+	
+	var getRandomImage = function() {
+		alert("This is working");		
+	};
+
+	
+	getNewImage.addEventListener ("click", getRandomImage);
+	
+	getNewImage.add(getNewImageLabel);
+	navWindow.openWindow(galleryWindow, getNewImage);
+	
+};
+
+//OPEN GALLERY WINDOW
+galleryView.addEventListener("click", getGalleryImage);

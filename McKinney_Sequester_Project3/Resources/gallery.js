@@ -35,8 +35,6 @@ var getGalleryDetail = function(dataSource) {
 	navWindow.openWindow(galleryDetailWindow);
 };
 
-
-
 //OPEN FULL GALLERY WINDOW
 var getGallery = function() {
 	var galleryWindow = Ti.UI.createWindow ({

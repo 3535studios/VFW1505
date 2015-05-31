@@ -8,9 +8,7 @@ var customSlider = function() {
 
 navWindow.openWindow(customWindow);
 	
-	
 };
-
 
 //OPEN CUSTOM WINDOW
 customView.addEventListener("click", customSlider);

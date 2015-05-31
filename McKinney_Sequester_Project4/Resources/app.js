@@ -44,6 +44,52 @@ var navWindow = Ti.UI.iOS.createNavigationWindow ({
 	window: mainWindow,
 });
 
+
+
+//CLASSES SECTION
+var submarinesTableHeader = Ti.UI.createView ({
+	height: 50,
+	backgroundColor: "#042F56"
+});
+
+var submarinesTableHeaderText = Ti.UI.createLabel ({
+	text: "Navy Submarines",
+	font: {fontSize: 22, fontWeight: "bold"},
+	color: "#fff"
+});
+
+submarinesTableHeader.add(submarinesTableHeaderText);
+
+//CUSTOM TABLE FOOTER
+var submarinesTableFooter = Ti.UI.createView ({
+	height: 30,
+	backgroundColor: "#8297AB"
+});
+
+var submarinesTableFooterText = Ti.UI.createLabel ({
+	text: "Silent Service",
+	font: {fontSize: 16, fontWeight: "normal"},
+	color: "#fff"
+});
+
+submarinesTableFooter.add(submarinesTableFooterText);
+
+// TABLE
+var navy = Ti.UI.createTableView ({
+	//top: border.top + border.height
+});
+
+if(Ti.Platform.name === "iPhone OS" ) {
+	navy.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
+}
+
+// SECTIONS && ROWS
+var submarinesSection = Ti.UI.createTableViewSection ({
+	headerView: submarinesTableHeader,
+	footerView: submarinesTableFooter
+});
+
+
 galleryView.add(galleryLabel);
 classesView.add(classesLabel);
 customView.add(customLabel);
